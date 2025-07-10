@@ -37,13 +37,16 @@ phishing-url-analyzer/
 4. Output is displayed (Safe, Suspicious, or Dangerous).
 
 ## How the Detection Works
-    **Feature**	                **Detection Type**
-Known malicious URLs	        Google Safe Browsing
-Long URLs	                       Rule-based
-Use of special characters	       Rule-based
-Suspicious keywords	               Rule-based
-Multiple subdomains	               Rule-based
-Manual domain blacklist	           Custom rule
+
+```
+Known malicious URLs -   Google Safe Browsing
+Long URLs	-  Rule-based
+Use of special characters	- Rule-based
+Suspicious keywords - Rule-based
+Multiple subdomains	- Rule-based
+Manual domain blacklist	 - Custom rule
+
+```
 
 ## Output Screenshot:
 
