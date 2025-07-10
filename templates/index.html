@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phishing Link Analyzer</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 Phishing Link Detector</h1>
+    <form method="post" action="/predict">
+      <input type="text" name="url" placeholder="Enter a URL..." required>
+      <button type="submit">Analyze</button>
+    </form>
+
+    {% if url %}
+      <div class="result">
+        <p><strong>URL:</strong> {{ url }}</p>
+        <p><strong>Result:</strong> {{ result }}</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
